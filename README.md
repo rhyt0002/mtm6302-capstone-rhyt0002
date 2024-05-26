@@ -2,6 +2,7 @@
 # Rhythm
 ## 041093902
 ### Astronomy Picture of the Day Search
-- For my Final project of astronomy picture of the day, I started with the mockup.
-- I came up with the simple color palette and fonts which make it easy for other to view.
-- With today's submission, I am adding the basic pages of my website that viewer have a look.
+- I started with the mockup for my Final project of astronomy picture of the day.
+- I created a simple color palette and fonts that make it easy for others to view.
+- With today's submission, I am adding my website's basic pages that viewers can look at.
+- After having a look at the mockup of my website it is pretty easy to know what kind of my website look.
