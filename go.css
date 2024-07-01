@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-fav-go {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.go-header {
+  text-align: left;
+  padding: 20px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.main-go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper1 {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+
+.image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid orange;
+  margin-right: 20px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.go-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.left-arrow {
+  left: -20px;
+  color: orange;
+  background-color: black;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+
+.right-arrow {
+  right: -20px;
+  color: orange;
+  background-color: black;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+
+.heart-button.top-right {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.context {
+  flex: 2;
+  padding: 20px;
+}
+
+.context p {
+  margin-bottom: 20px;
+}
+
+.go-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border: 3px solid #0000ff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.go-button:hover {
+  background-color: #0000ff;
+}
+
+/* Footer styling */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: orange;
+}
+.heart-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+/* Mobile Styles */
+@media (max-width: 800px) {
+  .go-header {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .wrapper1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .background-fav-go {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .nav-button.left-arrow {
+    left: 10px;
+  }
+
+  .nav-button.right-arrow {
+    right: 10px;
+  }
+  .heart-button.top-right {
+    top: 10px;
+    right: 20px;
+  }
+
+  .context {
+    padding: 10px;
+  }
+
+  .footer {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+}

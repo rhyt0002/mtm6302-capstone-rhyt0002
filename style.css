@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+/* CSS for index.html */
+
+
+
+/* Background and content styling */
+.background {
+  background-image: url("background-image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(11, 255, 225, 0.4);
+  padding: 20px;
+  border-radius: 40px;
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 78px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+.left-star {
+  left: 10px;
+}
+
+.right-star {
+  right: 10px;
+}
+
+.date {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.star {
+  position: absolute;
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.navigate-button {
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  border: 4px solid orange;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.navigate-button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Footer styling */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: orange;
+}
+.heart-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+
+
+/* CSS for favourites.html */
+
+
+
+
+.background-fav-go {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.favourite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.heart {
+  font-size: 1.5rem;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.gal-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.fav-footer a {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+  .background {
+    padding-right: 5%;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url("second_background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    
+  }
+
+  .title {
+    font-size: 2.7rem;
+  }
+
+  .container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30%;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .input-wrapper {
+    align-items: flex-start;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .background-fav-go {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+ 
+
+  .fav-footer a {
+    justify-content: center;
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .image-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
