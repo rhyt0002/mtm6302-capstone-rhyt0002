@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mtm6302-capstone-rhyt0002</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="background">
-      <div class="content">
-        <h1 class="title">
-          Astronomy Picture of <br />
-          the Day
-        </h1>
-        <div class="container">
-          <h2 class="heading">Pick a date</h2>
-          <div class="input-wrapper">
-            <div><span class="star left-star">⭐</span></div>
-            <div>
-              <input
-                type="date"
-                id="date-picker"
-                class="date"
-                value="2024-05-20"
-              />
-            </div>
-            <div><span class="star right-star">⭐</span></div>
-          </div>
-          <a class="navigate-button" href="go.html">Go</a>
-        </div>
-      </div>
-      
-    </div>
-    <footer class="footer">
-      <a href="favourites.html" class="link">View Favourites</a>
-      <button class="heart-button"><span class="heart">❤️</span></button>
-    </footer>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astronomy Picture of the Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Astronomy Picture of the Day</h1>
+  </header>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-  </body>
+  <main>
+    <form id="date-form">
+      <label for="date-input">Enter a date</label>
+      <div class="input-wrapper">
+        <div><span class="star left-star">⭐</span></div>
+        <input type="date" id="date-input" name="date-input" required />
+        <div><span class="star right-star">⭐</span></div>
+      </div>
+      <button type="submit" id="go-button" class="navigate-button">Go</button>
+    </form>
+
+    <section id="image-gallery">
+      <!-- Image details will be displayed here -->
+    </section>
+
+    <button id="save-favourite" style="display: none" class="add-to-favourite">Add to Favourites</button>
+
+    <h2>Favourites</h2>
+    <section id="favourites-gallery">
+      <!-- Favourites will be displayed here -->
+    </section>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
